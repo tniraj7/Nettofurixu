@@ -16,6 +16,7 @@
 		3466942A259B1095007683A1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669429259B1095007683A1 /* Movie.swift */; };
 		3466942D259B1100007683A1 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942C259B1100007683A1 /* StandardHomeMovie.swift */; };
 		34669430259B1140007683A1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942F259B1140007683A1 /* Helpers.swift */; };
+		34669434259B1560007683A1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669433259B1560007683A1 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		34669429259B1095007683A1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		3466942C259B1100007683A1 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		3466942F259B1140007683A1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		34669433259B1560007683A1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		34669410259B0CAA007683A1 /* Nettofurixu */ = {
 			isa = PBXGroup;
 			children = (
+				34669436259B15A0007683A1 /* ViewModels */,
 				34669411259B0CAA007683A1 /* NettofurixuApp.swift */,
 				34669421259B0EB5007683A1 /* HomeView.swift */,
 				3466942C259B1100007683A1 /* StandardHomeMovie.swift */,
@@ -81,6 +84,14 @@
 				34669418259B0CAB007683A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34669436259B15A0007683A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				34669433259B1560007683A1 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				34669422259B0EB5007683A1 /* HomeView.swift in Sources */,
 				34669430259B1140007683A1 /* Helpers.swift in Sources */,
+				34669434259B1560007683A1 /* HomeViewModel.swift in Sources */,
 				34669414259B0CAA007683A1 /* ContentView.swift in Sources */,
 				3466942D259B1100007683A1 /* StandardHomeMovie.swift in Sources */,
 				3466942A259B1095007683A1 /* Movie.swift in Sources */,
