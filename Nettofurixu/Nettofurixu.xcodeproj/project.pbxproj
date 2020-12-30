@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		340C1B51259C6F58004C57BB /* TopMoviePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340C1B50259C6F58004C57BB /* TopMoviePreviewView.swift */; };
+		340C1B54259C7594004C57BB /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340C1B53259C7594004C57BB /* SmallVerticalButton.swift */; };
 		34669412259B0CAA007683A1 /* NettofurixuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669411259B0CAA007683A1 /* NettofurixuApp.swift */; };
 		34669414259B0CAA007683A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669413259B0CAA007683A1 /* ContentView.swift */; };
 		34669416259B0CAB007683A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34669415259B0CAB007683A1 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		340C1B50259C6F58004C57BB /* TopMoviePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreviewView.swift; sourceTree = "<group>"; };
+		340C1B53259C7594004C57BB /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		3466940E259B0CAA007683A1 /* Nettofurixu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nettofurixu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34669411259B0CAA007683A1 /* NettofurixuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NettofurixuApp.swift; sourceTree = "<group>"; };
 		34669413259B0CAA007683A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				34669421259B0EB5007683A1 /* HomeView.swift */,
 				3466942C259B1100007683A1 /* StandardHomeMovieView.swift */,
 				340C1B50259C6F58004C57BB /* TopMoviePreviewView.swift */,
+				340C1B53259C7594004C57BB /* SmallVerticalButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				3466942D259B1100007683A1 /* StandardHomeMovieView.swift in Sources */,
 				3466942A259B1095007683A1 /* Movie.swift in Sources */,
 				34669412259B0CAA007683A1 /* NettofurixuApp.swift in Sources */,
+				340C1B54259C7594004C57BB /* SmallVerticalButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
