@@ -14,7 +14,7 @@
 		34669422259B0EB5007683A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669421259B0EB5007683A1 /* HomeView.swift */; };
 		34669427259B1068007683A1 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 34669426259B1068007683A1 /* KingfisherSwiftUI */; };
 		3466942A259B1095007683A1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669429259B1095007683A1 /* Movie.swift */; };
-		3466942D259B1100007683A1 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942C259B1100007683A1 /* StandardHomeMovie.swift */; };
+		3466942D259B1100007683A1 /* StandardHomeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942C259B1100007683A1 /* StandardHomeMovieView.swift */; };
 		34669430259B1140007683A1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942F259B1140007683A1 /* Helpers.swift */; };
 		34669434259B1560007683A1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669433259B1560007683A1 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 		3466941A259B0CAB007683A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34669421259B0EB5007683A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		34669429259B1095007683A1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		3466942C259B1100007683A1 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
+		3466942C259B1100007683A1 /* StandardHomeMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovieView.swift; sourceTree = "<group>"; };
 		3466942F259B1140007683A1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		34669433259B1560007683A1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +45,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340C1B49259C6E1B004C57BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34669429259B1095007683A1 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		340C1B4B259C6E31004C57BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34669413259B0CAA007683A1 /* ContentView.swift */,
+				34669421259B0EB5007683A1 /* HomeView.swift */,
+				3466942C259B1100007683A1 /* StandardHomeMovieView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		340C1B4C259C6E38004C57BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3466942F259B1140007683A1 /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		340C1B4F259C6E6F004C57BB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				34669411259B0CAA007683A1 /* NettofurixuApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		34669405259B0CAA007683A1 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +98,11 @@
 		34669410259B0CAA007683A1 /* Nettofurixu */ = {
 			isa = PBXGroup;
 			children = (
+				340C1B4F259C6E6F004C57BB /* App */,
+				340C1B4C259C6E38004C57BB /* Helpers */,
+				340C1B4B259C6E31004C57BB /* Views */,
+				340C1B49259C6E1B004C57BB /* Models */,
 				34669436259B15A0007683A1 /* ViewModels */,
-				34669411259B0CAA007683A1 /* NettofurixuApp.swift */,
-				34669421259B0EB5007683A1 /* HomeView.swift */,
-				3466942C259B1100007683A1 /* StandardHomeMovie.swift */,
-				34669413259B0CAA007683A1 /* ContentView.swift */,
-				34669429259B1095007683A1 /* Movie.swift */,
-				3466942F259B1140007683A1 /* Helpers.swift */,
 				34669415259B0CAB007683A1 /* Assets.xcassets */,
 				3466941A259B0CAB007683A1 /* Info.plist */,
 				34669417259B0CAB007683A1 /* Preview Content */,
@@ -173,7 +205,7 @@
 				34669430259B1140007683A1 /* Helpers.swift in Sources */,
 				34669434259B1560007683A1 /* HomeViewModel.swift in Sources */,
 				34669414259B0CAA007683A1 /* ContentView.swift in Sources */,
-				3466942D259B1100007683A1 /* StandardHomeMovie.swift in Sources */,
+				3466942D259B1100007683A1 /* StandardHomeMovieView.swift in Sources */,
 				3466942A259B1095007683A1 /* Movie.swift in Sources */,
 				34669412259B0CAA007683A1 /* NettofurixuApp.swift in Sources */,
 			);
