@@ -27,6 +27,8 @@ struct TopMoviePreviewView: View {
                     ForEach(movie.categories, id: \.self) { category in
                         HStack {
                             Text(category)
+                                .font(.footnote)
+                             
                             if !isCateogoryLast(cat: category) {
                                 Image(systemName: "circle.fill")
                                     .foregroundColor(.blue)
@@ -35,9 +37,34 @@ struct TopMoviePreviewView: View {
                         }
                     }
                 }
-                Text("Row of buttons")
+                
+                HStack {
+                    Spacer()
+                    
+                    SmallVerticalButton(title: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                        //
+                    }
+                    
+                    Spacer()
+                    
+                    WhiteButton(title: "Play", imageName: "play.fill") {
+                        //
+                    }.frame(width: 120)
+                    
+                    Spacer()
+                    
+                    SmallVerticalButton(title: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
+                        //
+                    }
+                    
+                    Spacer()
+                }
             }
-        }.foregroundColor(.blue)
+            .background(
+                LinearGradient.blackOpacityGradient
+                    .padding(.top, 250)
+            )
+        }.foregroundColor(.white)
     }
 }
 
