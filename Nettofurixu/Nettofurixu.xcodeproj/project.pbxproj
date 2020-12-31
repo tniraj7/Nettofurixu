@@ -20,6 +20,7 @@
 		3466942D259B1100007683A1 /* StandardHomeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942C259B1100007683A1 /* StandardHomeMovieView.swift */; };
 		34669430259B1140007683A1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942F259B1140007683A1 /* Helpers.swift */; };
 		34669434259B1560007683A1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669433259B1560007683A1 /* HomeViewModel.swift */; };
+		346FF96C259E0C69007A5854 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FF96B259E0C69007A5854 /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		3466942C259B1100007683A1 /* StandardHomeMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovieView.swift; sourceTree = "<group>"; };
 		3466942F259B1140007683A1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		34669433259B1560007683A1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		346FF96B259E0C69007A5854 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				34669429259B1095007683A1 /* Movie.swift */,
+				346FF96B259E0C69007A5854 /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34669422259B0EB5007683A1 /* HomeView.swift in Sources */,
+				346FF96C259E0C69007A5854 /* Episode.swift in Sources */,
 				340C1B57259C7FEE004C57BB /* WhiteButton.swift in Sources */,
 				34669430259B1140007683A1 /* Helpers.swift in Sources */,
 				34669434259B1560007683A1 /* HomeViewModel.swift in Sources */,
