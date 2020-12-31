@@ -19,6 +19,7 @@ let exampleMovies: [Movie] = [
     exampleMovie2,
     exampleMovie3,
     exampleMovie4,
+    exampleMovie5,
     exampleMovie6,
 ]
 
