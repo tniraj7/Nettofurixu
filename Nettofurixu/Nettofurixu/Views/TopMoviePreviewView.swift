@@ -21,7 +21,7 @@ struct TopMoviePreviewView: View {
                 .scaledToFill()
                 .clipped()
             
-            VStack {
+            VStack(spacing: 8) {
                 Spacer()
                 HStack {
                     ForEach(movie.categories, id: \.self) { category in
@@ -71,6 +71,5 @@ struct TopMoviePreviewView: View {
 struct TopMoviePreviewView_Previews: PreviewProvider {
     static var previews: some View {
         TopMoviePreviewView(movie: exampleMovie1)
-            .previewLayout(.sizeThatFits)
     }
 }
