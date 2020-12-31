@@ -20,6 +20,7 @@
 		3466942D259B1100007683A1 /* StandardHomeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942C259B1100007683A1 /* StandardHomeMovieView.swift */; };
 		34669430259B1140007683A1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466942F259B1140007683A1 /* Helpers.swift */; };
 		34669434259B1560007683A1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669433259B1560007683A1 /* HomeViewModel.swift */; };
+		346FF969259E0792007A5854 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FF968259E0792007A5854 /* MovieDetailView.swift */; };
 		346FF96C259E0C69007A5854 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FF96B259E0C69007A5854 /* Episode.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		3466942C259B1100007683A1 /* StandardHomeMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovieView.swift; sourceTree = "<group>"; };
 		3466942F259B1140007683A1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		34669433259B1560007683A1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		346FF968259E0792007A5854 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		346FF96B259E0C69007A5854 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				340C1B50259C6F58004C57BB /* TopMoviePreviewView.swift */,
 				340C1B53259C7594004C57BB /* SmallVerticalButton.swift */,
 				340C1B56259C7FEE004C57BB /* WhiteButton.swift */,
+				346FF968259E0792007A5854 /* MovieDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				3466942A259B1095007683A1 /* Movie.swift in Sources */,
 				34669412259B0CAA007683A1 /* NettofurixuApp.swift in Sources */,
 				340C1B54259C7594004C57BB /* SmallVerticalButton.swift in Sources */,
+				346FF969259E0792007A5854 /* MovieDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
