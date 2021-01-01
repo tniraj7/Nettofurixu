@@ -16,8 +16,8 @@ struct HomeView: View {
                     TopRowButtons()
                     
                     TopMoviePreviewView(movie: exampleMovie2)
-                        .frame(width: screen.width )
-                        .padding(.top, -110)
+                        .frame(width: screen.width)
+                        .padding(.top, -120)
                         .zIndex(-1)
                     
                     ForEach(vm.allCategories, id: \.self) { category in
