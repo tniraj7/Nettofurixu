@@ -42,6 +42,23 @@ struct MovieDetailView: View {
                         CurrentEpisodeInformationView(movie: movie)
                         
                         CastInfo(movie: movie)
+                        
+                        HStack(spacing: 60) {
+                            SmallVerticalButton(title: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                                //
+                            }
+                            
+                            SmallVerticalButton(title: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: false) {
+                                //
+                            }
+                            
+                            SmallVerticalButton(title: "Share", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
+                                //
+                            }
+                            
+                            Spacer()
+                        }
+                        .padding(.leading, 20)
                     }
                     .padding(.horizontal, 10)
                 }
