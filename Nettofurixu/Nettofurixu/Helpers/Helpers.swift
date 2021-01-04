@@ -7,12 +7,12 @@ let exampleMovie1 = Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
     categories: ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    moreLikeThisMovies: exampleMovies,
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 1,
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: exampleMovies)
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -20,13 +20,13 @@ let exampleMovie2 = Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
     categories:  ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    moreLikeThisMovies: [],
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 2,
     promotionHeadline: "Best Rated Show",
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: exampleMovies)
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
@@ -34,12 +34,12 @@ let exampleMovie3 = Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/301/")!,
     categories:  ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    moreLikeThisMovies: [],
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 3,
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: exampleMovies)
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 
 let exampleMovie4 =  Movie(
@@ -48,13 +48,13 @@ let exampleMovie4 =  Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/302/")!,
     categories:  ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    moreLikeThisMovies: [],
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 4,
     promotionHeadline: "New episodes coming soon",
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: exampleMovies)
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
@@ -62,25 +62,38 @@ let exampleMovie5 = Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/303/")!,
     categories:  ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    moreLikeThisMovies: [],
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 5,
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: exampleMovies)
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
-let exampleMovie6 =     Movie(
+let exampleMovie6 = Movie(
     id: UUID().uuidString,
     name: "After Life",
     thumbnailURL: URL(string: "https://picsum.photos/200/304/")!,
     categories:  ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    moreLikeThisMovies: [],
     year: 2020, rating: "TV-MA",
     numberOfSeasons: 6,
     promotionHeadline: "Watch Season 6 Now",
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: exampleMovies)
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
+
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "After Life",
+    thumbnailURL: URL(string: "https://picsum.photos/200/304/")!,
+    categories:  ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    moreLikeThisMovies: [],
+    year: 2020, rating: "TV-MA",
+    numberOfSeasons: 6,
+    promotionHeadline: "Watch Season 6 Now",
+    creators: "Baran bo Odan, Jantje Friese",
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(
     episodeName: "Beginnings and Endings",
@@ -90,13 +103,13 @@ let exampleEpisodeInfo1 = CurrentEpisodeInfo(
 )
 
 var exampleMovies: [Movie] {
-    return  [
-        exampleMovie1,
+    return [
         exampleMovie2,
         exampleMovie3,
         exampleMovie4,
         exampleMovie5,
         exampleMovie6,
+        exampleMovie7
     ].shuffled()
 }
 

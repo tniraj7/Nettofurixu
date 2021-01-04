@@ -11,6 +11,7 @@ struct Movie: Identifiable {
     var defaultEpisodeInfo: CurrentEpisodeInfo
     
     var episodes: [Episode]?
+    var moreLikeThisMovies: [Movie]
     var year: Int
     var rating: String
     var numberOfSeasons: Int?
@@ -30,8 +31,6 @@ struct Movie: Identifiable {
     
     var creators: String
     var cast: String
-    
-    var moreLikeThisMovies: [Movie]
     var episodeInfoDisplay: String {
         if let current  = currentEpisode {
             return "S\(current.season):E\(current.episode) \(current.episodeName)"

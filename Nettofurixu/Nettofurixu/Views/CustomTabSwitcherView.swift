@@ -63,7 +63,7 @@ struct CustomTabSwitcherView: View {
 struct CustomTabSwitcherView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CustomTabSwitcherView(tabs: [.episodes, .trailers, .more], movie: exampleMovie3)
+            CustomTabSwitcherView(tabs: [.episodes, .trailers, .more], movie: exampleMovie1)
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
                 .padding()
