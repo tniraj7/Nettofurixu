@@ -11,7 +11,8 @@ let exampleMovie1 = Movie(
     rating: "TV-MA",
     numberOfSeasons: 1,
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: exampleMovies)
 
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -24,7 +25,8 @@ let exampleMovie2 = Movie(
     numberOfSeasons: 2,
     promotionHeadline: "Best Rated Show",
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: exampleMovies)
 
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
@@ -36,7 +38,8 @@ let exampleMovie3 = Movie(
     rating: "TV-MA",
     numberOfSeasons: 3,
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: exampleMovies)
 
 
 let exampleMovie4 =  Movie(
@@ -50,7 +53,8 @@ let exampleMovie4 =  Movie(
     numberOfSeasons: 4,
     promotionHeadline: "New episodes coming soon",
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: exampleMovies)
 
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
@@ -62,7 +66,8 @@ let exampleMovie5 = Movie(
     rating: "TV-MA",
     numberOfSeasons: 5,
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: exampleMovies)
 
 let exampleMovie6 =     Movie(
     id: UUID().uuidString,
@@ -74,7 +79,8 @@ let exampleMovie6 =     Movie(
     numberOfSeasons: 6,
     promotionHeadline: "Watch Season 6 Now",
     creators: "Baran bo Odan, Jantje Friese",
-    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: exampleMovies)
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(
     episodeName: "Beginnings and Endings",
@@ -83,14 +89,16 @@ let exampleEpisodeInfo1 = CurrentEpisodeInfo(
     episode: 1
 )
 
-let exampleMovies: [Movie] = [
-    exampleMovie1,
-    exampleMovie2,
-    exampleMovie3,
-    exampleMovie4,
-    exampleMovie5,
-    exampleMovie6,
-]
+var exampleMovies: [Movie] {
+    return  [
+        exampleMovie1,
+        exampleMovie2,
+        exampleMovie3,
+        exampleMovie4,
+        exampleMovie5,
+        exampleMovie6,
+    ].shuffled()
+}
 
 
 extension LinearGradient {

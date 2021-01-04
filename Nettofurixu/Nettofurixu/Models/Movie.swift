@@ -31,6 +31,7 @@ struct Movie: Identifiable {
     var creators: String
     var cast: String
     
+    var moreLikeThisMovies: [Movie]
     var episodeInfoDisplay: String {
         if let current  = currentEpisode {
             return "S\(current.season):E\(current.episode) \(current.episodeName)"
