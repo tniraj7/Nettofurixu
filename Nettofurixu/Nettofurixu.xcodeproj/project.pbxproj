@@ -23,6 +23,7 @@
 		34669434259B1560007683A1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34669433259B1560007683A1 /* HomeViewModel.swift */; };
 		346FF969259E0792007A5854 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FF968259E0792007A5854 /* MovieDetailView.swift */; };
 		346FF96C259E0C69007A5854 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FF96B259E0C69007A5854 /* Episode.swift */; };
+		34BD160D25A3378A0074BB33 /* MoreLikeThisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD160C25A3378A0074BB33 /* MoreLikeThisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		34669433259B1560007683A1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		346FF968259E0792007A5854 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		346FF96B259E0C69007A5854 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		34BD160C25A3378A0074BB33 /* MoreLikeThisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				340C1B56259C7FEE004C57BB /* PlayButton.swift */,
 				346FF968259E0792007A5854 /* MovieDetailView.swift */,
 				344F19A425A1F5DD00BB4B26 /* CustomTabSwitcherView.swift */,
+				34BD160C25A3378A0074BB33 /* MoreLikeThisView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				346FF96C259E0C69007A5854 /* Episode.swift in Sources */,
 				340C1B57259C7FEE004C57BB /* PlayButton.swift in Sources */,
 				34669430259B1140007683A1 /* Helpers.swift in Sources */,
+				34BD160D25A3378A0074BB33 /* MoreLikeThisView.swift in Sources */,
 				344F19A525A1F5DD00BB4B26 /* CustomTabSwitcherView.swift in Sources */,
 				34669434259B1560007683A1 /* HomeViewModel.swift in Sources */,
 				34669414259B0CAA007683A1 /* ContentView.swift in Sources */,
