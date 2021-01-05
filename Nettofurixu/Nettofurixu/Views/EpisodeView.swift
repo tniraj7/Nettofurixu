@@ -30,7 +30,17 @@ struct EpisodeView: View {
             }
             
             ForEach(getEpisodesForSeason(forSeason: selectedSeason)) { episode in
-                Text("test")
+                VStack {
+                    
+//                    HStack {
+//                        ViedePreview
+//                        Text("efeaf")
+//                        
+//                    }
+                    Text(episode.description)
+                        .font(.system(size: 13))
+                        .lineLimit(3)
+                }
             }
             
             Spacer()

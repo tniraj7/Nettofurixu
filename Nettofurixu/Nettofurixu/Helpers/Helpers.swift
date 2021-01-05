@@ -3,7 +3,35 @@ import SwiftUI
 
 
 let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
-let exampleImageURL = URL(string: "https://picsum.photos/300/102")!
+let exampleImageURL = URL(string: "https://picsum.photos/300/103")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/104")!
+
+var randomExampleImageUrl: URL {
+    return [exampleImageURL, exampleImageURL2, exampleImageURL3].randomElement() ?? exampleImageURL
+}
+
+let exampleTrailer1 = Trailer(
+    name: "Season 3 Trailer",
+    videoURL: exampleVideoURL,
+    thumbnailImageURL: randomExampleImageUrl)
+
+
+let exampleTrailer2 = Trailer(
+    name: "The Hero's Journey",
+    videoURL: exampleVideoURL,
+    thumbnailImageURL: randomExampleImageUrl)
+
+
+let exampleTrailer3 = Trailer(
+    name: "The Mysterious",
+    videoURL: exampleVideoURL,
+    thumbnailImageURL: randomExampleImageUrl)
+
+var exampleTrailers: [Trailer] {
+    return [exampleTrailer1, exampleTrailer2, exampleTrailer3].shuffled()
+}
+
 
 let episode1 = Episode(
     name: "Beginnings and Endings",
@@ -78,6 +106,7 @@ let exampleMovie1 = Movie(
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 1,
+    trailers: exampleTrailers,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
@@ -92,6 +121,7 @@ let exampleMovie2 = Movie(
     rating: "TV-MA",
     numberOfSeasons: 2,
     promotionHeadline: "Best Rated Show",
+    trailers: exampleTrailers,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
@@ -105,6 +135,7 @@ let exampleMovie3 = Movie(
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 3,
+    trailers: exampleTrailers,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
@@ -120,7 +151,7 @@ let exampleMovie4 =  Movie(
     rating: "TV-MA",
     numberOfSeasons: 4,
     promotionHeadline: "New episodes coming soon",
-    creators: "Baran bo Odan, Jantje Friese",
+    trailers: exampleTrailers, creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleMovie5 = Movie(
@@ -133,7 +164,7 @@ let exampleMovie5 = Movie(
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 5,
-    creators: "Baran bo Odan, Jantje Friese",
+    trailers: exampleTrailers, creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleMovie6 = Movie(
@@ -146,7 +177,7 @@ let exampleMovie6 = Movie(
     year: 2020, rating: "TV-MA",
     numberOfSeasons: 6,
     promotionHeadline: "Watch Season 6 Now",
-    creators: "Baran bo Odan, Jantje Friese",
+    trailers: exampleTrailers, creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleMovie7 = Movie(
@@ -159,7 +190,7 @@ let exampleMovie7 = Movie(
     year: 2020, rating: "TV-MA",
     numberOfSeasons: 6,
     promotionHeadline: "Watch Season 6 Now",
-    creators: "Baran bo Odan, Jantje Friese",
+    trailers: exampleTrailers, creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(

@@ -47,7 +47,7 @@ struct CustomTabSwitcherView: View {
                 Text("EPISODES")
                 
             case .trailers:
-                Text("TRAILERS & MORE")
+                TrailerListView(trailer: movie.trailers)
                 
             case .more:
                 Text("MORE")
