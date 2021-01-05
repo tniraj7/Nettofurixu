@@ -3,6 +3,7 @@ import SwiftUI
 
 
 let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
+let exampleImageURL = URL(string: "https://picsum.photos/300/102")!
 
 let episode1 = Episode(
     name: "Beginnings and Endings",
