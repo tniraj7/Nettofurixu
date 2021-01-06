@@ -102,10 +102,11 @@ let exampleMovie1 = Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
     categories: ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    episodes: allExampleEpisodes,
     moreLikeThisMovies: exampleMovies,
     year: 2020,
     rating: "TV-MA",
-    numberOfSeasons: 1,
+    numberOfSeasons: 2,
     trailers: exampleTrailers,
     creators: "Baran bo Odan, Jantje Friese",
     cast: "Louis Hoffman, Oliver Masucci, Jordis Triebel")

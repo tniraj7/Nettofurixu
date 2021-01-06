@@ -4,7 +4,7 @@ struct MovieDetailView: View {
     
     let movie: Movie
     let screen = UIScreen.main.bounds
-    @State private var showSeasonPicker = true
+    @State private var showSeasonPicker = false
     @State private var selectedSeason = 1
     
     var body: some View {
@@ -111,7 +111,7 @@ struct MovieDetailView: View {
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(movie: exampleMovie2)
+        MovieDetailView(movie: exampleMovie1)
     }
 }
 
