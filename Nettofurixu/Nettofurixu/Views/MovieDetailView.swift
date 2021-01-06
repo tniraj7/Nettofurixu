@@ -4,8 +4,8 @@ struct MovieDetailView: View {
     
     let movie: Movie
     let screen = UIScreen.main.bounds
-    @State private var showSeasonPicker = false
-    @State private var seletedSeason = 1
+    @State private var showSeasonPicker = true
+    @State private var selectedSeason = 1
     
     var body: some View {
         ZStack {
@@ -62,7 +62,7 @@ struct MovieDetailView: View {
                         }
                         .padding(.leading, 20)
                         
-                        CustomTabSwitcherView(tabs: [.episodes, .trailers, .more], movie: exampleMovie1)
+                        CustomTabSwitcherView(tabs: [.episodes, .trailers, .more], movie: exampleMovie1, showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
                     }
                     .padding(.horizontal, 10)
                 }
@@ -70,6 +70,41 @@ struct MovieDetailView: View {
                 Spacer()
             }
             .foregroundColor(.white)
+            
+            if showSeasonPicker {
+                Group {
+                    BlurView(style: .systemThickMaterialDark)
+                    
+                    VStack(spacing: 40) {
+                        Spacer()
+                        
+                        ForEach(0..<(movie.numberOfSeasons ?? 0)) { season in
+                            Button(action: {
+                                self.selectedSeason = season + 1
+                                self.showSeasonPicker = false
+                            }, label: {
+                                Text("Season \(season)")
+                                    .foregroundColor((selectedSeason == (season + 1)) ? .white : .gray)
+                                    .bold()
+                                    .font((selectedSeason == (season + 1)) ? .title : .title2)
+                            })
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            self.showSeasonPicker = false
+                        }, label: {
+                            Image(systemName: "x.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                                .scaleEffect(x: 1.1)
+                        })
+                        .padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+            }
         }
     }
 }
