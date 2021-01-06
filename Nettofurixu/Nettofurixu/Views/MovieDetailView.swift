@@ -73,7 +73,7 @@ struct MovieDetailView: View {
             
             if showSeasonPicker {
                 Group {
-                    BlurView(style: .systemThickMaterialDark)
+                    BlurView(style: .systemThinMaterialDark)
                     
                     VStack(spacing: 40) {
                         Spacer()
@@ -83,7 +83,7 @@ struct MovieDetailView: View {
                                 self.selectedSeason = season + 1
                                 self.showSeasonPicker = false
                             }, label: {
-                                Text("Season \(season)")
+                                Text("Season \(season + 1)")
                                     .foregroundColor((selectedSeason == (season + 1)) ? .white : .gray)
                                     .bold()
                                     .font((selectedSeason == (season + 1)) ? .title : .title2)

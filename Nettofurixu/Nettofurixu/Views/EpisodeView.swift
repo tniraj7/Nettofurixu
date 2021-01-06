@@ -22,9 +22,7 @@ struct EpisodeView: View {
                         Image(systemName: "chevron.down")
                     }
                     .font(.system(size: 16))
-                    
                 })
-                
                 Spacer()
             }
             

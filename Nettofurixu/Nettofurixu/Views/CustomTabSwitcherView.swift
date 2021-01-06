@@ -12,7 +12,7 @@ struct CustomTabSwitcherView: View {
     var movie: Movie
     @State private var currentTab: CustomTab = .episodes
     @Binding var showSeasonPicker: Bool
-    @Binding var selectedSeason : Int
+    @Binding var selectedSeason: Int
     
     private func widthForTab(_ tab: CustomTab) -> CGFloat {
         let string = tab.rawValue
@@ -52,7 +52,6 @@ struct CustomTabSwitcherView: View {
                 TrailerListView(trailer: movie.trailers)
                 
             case .more:
-                Text("MORE")
                 MoreLikeThisView(movies: movie.moreLikeThisMovies)
             }
         }
