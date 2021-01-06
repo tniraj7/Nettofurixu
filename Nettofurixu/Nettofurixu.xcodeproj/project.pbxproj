@@ -29,6 +29,7 @@
 		346FF969259E0792007A5854 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FF968259E0792007A5854 /* MovieDetailView.swift */; };
 		346FF96C259E0C69007A5854 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FF96B259E0C69007A5854 /* Episode.swift */; };
 		34BD160D25A3378A0074BB33 /* MoreLikeThisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD160C25A3378A0074BB33 /* MoreLikeThisView.swift */; };
+		34F30B5325A5F03000678068 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F30B5225A5F03000678068 /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		346FF968259E0792007A5854 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		346FF96B259E0C69007A5854 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		34BD160C25A3378A0074BB33 /* MoreLikeThisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThisView.swift; sourceTree = "<group>"; };
+		34F30B5225A5F03000678068 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				346BB64A25A471BD0062A991 /* SwiftUIVideoView.swift */,
 				346BB64D25A472370062A991 /* VideoPreviewImage.swift */,
 				346BB65025A474860062A991 /* TrailerListView.swift */,
+				34F30B5225A5F03000678068 /* BlurView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				346BB64825A4716A0062A991 /* Trailer.swift in Sources */,
 				3466942A259B1095007683A1 /* Movie.swift in Sources */,
 				34669412259B0CAA007683A1 /* NettofurixuApp.swift in Sources */,
+				34F30B5325A5F03000678068 /* BlurView.swift in Sources */,
 				340C1B54259C7594004C57BB /* SmallVerticalButton.swift in Sources */,
 				346FF969259E0792007A5854 /* MovieDetailView.swift in Sources */,
 			);
