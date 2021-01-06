@@ -11,7 +11,7 @@ struct Episode: Identifiable {
      
     var videoURL: URL
     
-    var thumbnail: URL {
+    var thumbnailURL: URL {
         return URL(string: thumbnailImageURLString)!
     }
     
