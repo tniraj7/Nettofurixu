@@ -4,6 +4,7 @@ struct HomeView: View {
     
     var vm = HomeViewModel()
     let screen = UIScreen.main.bounds
+    @State private var movieDetailToShow: Movie? = exampleMovie7
     
     var body: some View {
         ZStack {
@@ -33,12 +34,21 @@ struct HomeView: View {
                                         StandardHomeMovieView(movie: movie)
                                             .frame(width: 100, height: 200)
                                             .padding(.horizontal, 20)
+                                            .onTapGesture {
+                                                movieDetailToShow = movie
+                                            }
                                     }
                                 }
                             }
                         }
                     }
                 }
+            }
+            
+            if movieDetailToShow != nil {
+                MovieDetailView(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
+                    .animation(.easeInOut)
+                    .transition(.opacity)
             }
         }
         .foregroundColor(.white)
