@@ -117,6 +117,7 @@ let exampleMovie2 = Movie(
     thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
     categories:  ["Dystopian", "Exciting", "Suspense", "Sci-Fi TV"],
     defaultEpisodeInfo: exampleEpisodeInfo1,
+    episodes: allExampleEpisodes,
     moreLikeThisMovies: [],
     year: 2020,
     rating: "TV-MA",
