@@ -8,6 +8,8 @@ class HomeViewModel: ObservableObject {
         movies.keys.map { String($0) }
     }
     
+    var allGenres: [HomeGenre] = [.Action, .AllGenres, .Comedy, .Horror, .Thriller]
+    
     init() {
         setupMovies()
     }
@@ -20,15 +22,15 @@ class HomeViewModel: ObservableObject {
         movies["Sci-Fi Movies"] = exampleMovies.shuffled()
     }
     
-    func getMovie(forCat cat: String, andHomeRow homerow: HomeTopRow) -> [Movie] {
+    func getMovie(forCat cat: String, andHomeRow homerow: HomeTopRow, andGenre genre: HomeGenre) -> [Movie] {
         
         switch homerow {
         case .home:
             return movies[cat] ?? []
         case .movies:
-            return (movies[cat] ?? []).filter({ $0.movieType == .movie})
+            return (movies[cat] ?? []).filter({ $0.movieType == .movie && ($0.genre ==  genre) })
         case .tvshows:
-            return (movies[cat] ?? []).filter({ $0.movieType == .tvshow})
+            return (movies[cat] ?? []).filter({ $0.movieType == .tvshow && ($0.genre ==  genre) })
         case .myList:
             return movies[cat] ?? []
         }
