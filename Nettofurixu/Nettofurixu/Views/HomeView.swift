@@ -25,7 +25,7 @@ struct HomeView: View {
                         .padding(.top, -120)
                         .zIndex(-1)
                     
-                    HomeStack(vm: vm, topRowSelection: topRowSelection, movieDetailToShow: $movieDetailToShow)
+                    HomeStack(vm: vm, topRowSelection: topRowSelection, selectedGenre: homeGenre, movieDetailToShow: $movieDetailToShow)
                 }
             }
             
@@ -33,6 +33,87 @@ struct HomeView: View {
                 MovieDetailView(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
                     .animation(.easeInOut)
                     .transition(.opacity)
+            }
+            
+            if showTopRowSelection {
+                Group {
+                    BlurView(style: .systemThinMaterialDark)
+                    VStack(spacing: 40) {
+                        Spacer()
+                        
+                        ForEach(HomeTopRow.allCases, id: \.self) { topRow in
+                            Button(action: {
+                                topRowSelection = .tvshows
+                                showTopRowSelection = false
+                            }, label: {
+                                if topRow == topRowSelection {
+                                    Text("\(topRow.rawValue)")
+                                        .bold()
+                                } else {
+                                    Text("\(topRow.rawValue)")
+                                        .foregroundColor(.gray)
+                                }
+                                
+                            })
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            showTopRowSelection = false
+                        }, label: {
+                            Image(systemName: "x.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                                .scaleEffect(x: 1.1)
+                        })
+                        .padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
+            }
+            
+            if showGenereSelection {
+                Group {
+                    BlurView(style: .systemThinMaterialDark)
+                    VStack(spacing: 40) {
+                        Spacer()
+                        
+                        ScrollView(.vertical, showsIndicators: false) {
+                            ForEach(vm.allGenres, id: \.self) { genre in
+                                Button(action: {
+                                    homeGenre = genre
+                                    showGenereSelection = false
+                                }, label: {
+                                    if genre == homeGenre {
+                                        Text("\(genre.rawValue)")
+                                            .bold()
+                                    } else {
+                                        Text("\(genre.rawValue)")
+                                            .foregroundColor(.gray)
+                                    }
+                                    
+                                })
+                                .padding(.bottom, 40)
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            showGenereSelection = false
+                        }, label: {
+                            Image(systemName: "x.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                                .scaleEffect(x: 1.1)
+                        })
+                        .padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
             }
         }
         .foregroundColor(.white)
